@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    :root {
+      --bg-url: url("https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg");
+    }
+    .hero {
+      width: 100%;
+      height: 300px;
+      background: var(--bg-url) no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      padding: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* ✅ Uniform image size */
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .card p {
+      padding: 0 10px;
+      font-size: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin: 10px 0 15px;
+      padding: 6px 12px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #555;
+    }
+
+    /* 📱 Mobile Fixes */
+    @media (max-width: 600px) {
+      .container {
+        gap: 1em;
+      }
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="hero">Accomodation near the Monastery</div>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/proxy/5XrnrnhSxEmmOr1yPB6uw0YolE4ShhMs_rMzwRTgpZwoFms1G_zrGGlUxQF36YaGZoHTvnYmvwLXMuzPyy5gRUAzDavaw4dVczWFX5nl4WyMnDKAYGWAMjxDWhsGJJh4oGkEbNbUpUmxvAXotxSfDze-SDHZWA=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>Ghonday Village Resort</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPyLziClSIFuDTKC-kftJ1cElx7ONbv0FQG6yBL=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>MANDARIN VILLAGE RESORT</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipP62lIT1tzX0trd0PTTQPvXLr4gK4AGrrgWpEW7=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>Emaho Boutique Resort</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipONseKVHY8314rqO2bBZVs0shbD4LK0b3_sHEqt=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>Udaan Khang-Chen View Resort & Spa</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/proxy/FtfgAdXTOV5IfhsjVavCDU9raeU3lXsbITvvzQpz2BQHes22-4b2liDI8sG4E9Sne8gx_d22MzVwDbzGvKMK83_UrO8ivms8JJKtXU4AUqEdchfg5tE0iS90NpmcPDziJcPzqQdUkizWzSLKyfXxuy2oKOUhiYM=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>Chumbi Mountain Retreat & Spa</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/proxy/G97EONcWAr89B5tWNVBs7zoTxlH39k6CmKYYb2_e5W3On9B5b3vKtgJRFE_nvmz3W4zj83hbW6lrqwry-Zvs8DyHXHgGadN7XqlfOmK0oTurX1yWDkHNWSF4Q0cc12X8Ww09yo4CpJk2kv9PnUH5laEixC7fLdI=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>MAYFAIR Spa Resort & Casino, Gangtok</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipOgw3T2i7fXwP7OFKK0gwKKCEpWlL6De4HFNuzy=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>Dungmali Heritage Village Resort</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipNxSOUcb_gc2agW6emekFCpR5WmP6EnKYRo3jFy=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>The Elgin Mount Pandim - Pelling - Heritage Resort & Spa</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipMqKvdpqy6joMKvqackdSq5P9Eqn_YGLJEhpF90=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>Magpie Pachhu Village Resort</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/proxy/FoxAEziBzZKOSKntXkyqXHIFn-be9g8hBXrmuDVm-LY495Zea4vFalNQ1EEFDOkpwnAT8_Ac9WItYQCoclrvlE0ulfhxBSJHi5ArJHSbtXo2jcz_bEALdx6mYP_3t8TCmwCNv0Vb23MPDqubd4dL4oO3Ziow7fs=w574-h384-n-k-rw-no-v1" alt="">
+      <h2>Sobralia Hotels - Casino Resort & Spa, Namchi</h2>
+      <p>Click here to Conform this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotels in Pelling</title>
+  <style>
+    :root {
+      --bg-url: url("https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg");
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Hero banner with the same background image */
+    .hero {
+      width: 100%;
+      height: 300px;
+      background: var(--bg-url) no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .container {
+      padding: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Uniform background-image block (same visual as your earlier request) */
+    .card .img {
+      width: 100%;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      padding: 0 10px;
+    }
+
+    .card p {
+      padding: 0 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin: 10px 0 15px;
+      padding: 6px 12px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #555;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .container { gap: 1em; padding: 1em; }
+      .card { width: 100%; }
+      .hero { height: 200px; font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO banner using the same background -->
+  <div class="hero">Accomodation near the Monastery</div>
+
+  <div class="container">
+    <div class="card">
+      <div class="img" style="background-image: url('https://pix10.agoda.net/hotelImages/410233/-1/6b918a51e7684a53552b399130281ae3.jpg?ce=0&s=1024x768');"></div>
+      <h2>Hotel Red Palace</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://q-xx.bstatic.com/xdata/images/hotel/840x460/405319177.jpg?k=d5f067fd36aaf7a6446a9c343cdbc45427741f8ed9f08dd0d898ad0c097fe966&o=');"></div>
+      <h2>Hotel Himsagar</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th?id=OLC.mGeqFG5Xk+BKew480x360&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Tashigang Hotel</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://imgservice.rentbyowner.com/500x325/hotel-pemalingpa-in-pemayangtse-bc-5740383-1.jpg');"></div>
+      <h2>Hotel Pemalingpa</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://imgservice.rentbyowner.com/500x325/10-zing-homestay-in-pelling-bc-9952612-4.jpg');"></div>
+      <h2>10-Zing Homestay</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th/id/OLC.Xm20HeBIu6Vw5A480x360?&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Hotel Demazong</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th/id/OLC.IpAPEFHP1R25Jw480x360?&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Mann Serchhu Farmhouse</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th/id/OLC.cxt01pvQrvNoiw480x360?&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Sila Norphel Pelling</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://lbcdn.airpaz.com/hotelimages/4029682/sikkim-heritage-pelling-city-62a4ee3ceda56f2e80847e92850f4696.jpg');"></div>
+      <h2>Sikkim Tourist Centre</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th/id/OLC.gVgJqgh1LLLBCg480x360?&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Hotel Chiminda Pelling</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+  </div>
+
+</body>
+</html>

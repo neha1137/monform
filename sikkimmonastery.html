@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Monasteries Of Sikkim</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ✅ Background image for the whole section */
+    .bgimage {
+      background: url("https://images.unsplash.com/photo-1573398643956-2b9e6ade3456?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+        no-repeat center center/cover;
+      min-height: 100vh;
+      padding: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .flexs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background-color: rgba(255, 239, 213, 0.9); /* semi-transparent */
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* ✅ Uniform image size */
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      padding: 0 10px;
+      font-size: 14px;
+    }
+
+    /* ✅ Narrower button */
+    .card a {
+      display: inline-block;
+      margin: 10px 0 15px;
+      padding: 6px 12px;   /* reduced padding */
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;     /* slightly smaller text */
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #555;
+    }
+
+    /* 📱 Mobile Fixes */
+    @media (max-width: 600px) {
+      .flexs {
+        gap: 1em;
+      }
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Background applied here -->
+  <div class="bgimage">
+    <div class="flexs">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAcWHj-2F0sce9ajLrsTrsdc_vWcs_GegeSK0a2ghBTe36xGmFGQ1Qg0e9lxZY-yBcOFM&usqp=CAU" alt="">
+        <h2>Pemayangtse Monastery</h2>
+        <p>For Booking the resort click on the link</p>
+        <a href="./resort1.html">Click Here</a>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNAT28OBu-JgnkLm_5C-Bq8RIoZ800GzDfA&s" alt="">
+        <h2>Rumtek Monastery</h2>
+        <p>For Booking the resort click on the link</p>
+        <a href="./resort2.html">Click Here</a>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0tFWUlr8WyxFt6P-ESWQ5hjTRbYvP3TgbsA&s" alt="">
+        <h2>Enchey Monastery</h2>
+        <p>For Booking the resort click on the link</p>
+        <a href="./resort3.html">Click Here</a>
+      </div>
+
+      <div class="card">
+        <img src="https://live.staticflickr.com/1890/44208718062_1cd5c561db_h.jpg" alt="">
+        <h2>Dubdi Monastery</h2>
+        <p>For Booking the resort click on the link</p>
+        <a href="./resort4.html">Click Here</a>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoGvrR7-ps8pIr0v_Eo_2isbH8VWtRlzRVg&s" alt="">
+        <h2>Tashiding Monastery</h2>
+        <p>For Booking the resort click on the link</p>
+        <a href="./resort5.html">Click Here</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Input Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("https://www.poojn.in/wp-content/uploads/2025/04/The-Namgyal-Dynastys-Legacy-Architecture-and-Art-in-Sikkim.jpeg.jpg") 
+                  no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(141, 108, 45, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-group {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .form-group {
+        flex: 1 1 100%;
+      }
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      font-size: 1.1rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Please Enter the Details</h2>
+    <form id="myForm">
+      <div class="form-group">
+        <label for="input1">First Name</label>
+        <input type="text" id="input1" placeholder="Enter first name">
+      </div>
+      <div class="form-group">
+        <label for="input2">Last Name</label>
+        <input type="text" id="input2" placeholder="Enter last name">
+      </div>
+      <div class="form-group">
+        <label for="input3">Email</label>
+        <input type="email" id="input3" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="input4">Phone</label>
+        <input type="text" id="input4" placeholder="Enter phone number">
+      </div>
+      <div class="form-group">
+        <label for="input5">Address</label>
+        <input type="text" id="input5" placeholder="Enter address">
+      </div>
+      <div class="form-group">
+        <label for="input6">City</label>
+        <input type="text" id="input6" placeholder="Enter city">
+      </div>
+      <div class="form-group">
+        <label for="input7">State</label>
+        <input type="text" id="input7" placeholder="Enter state">
+      </div>
+      <div class="form-group">
+        <label for="input8">Zip Code</label>
+        <input type="text" id="input8" placeholder="Enter zip code">
+      </div>
+      <div class="form-group">
+        <label for="input9">Country</label>
+        <input type="text" id="input9" placeholder="Enter country">
+      </div>
+      <div class="form-group">
+        <label for="input10">Occupation</label>
+        <input type="text" id="input10" placeholder="Enter occupation">
+      </div>
+      
+      <!-- Next button -->
+      <button type="button" class="submit-btn" onclick="validateForm()">Next<a href="./newfor.html"></a></button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const inputs = document.querySelectorAll('#myForm input');
+      for (let input of inputs) {
+        if (input.value.trim() === "") {
+          alert("Please fill all the inputs before proceeding!");
+          return;
+        }
+      }
+      // If all inputs are filled, go to next page
+      window.location.href = "./newfor.html";
+    }
+  </script>
+</body>
+</html>

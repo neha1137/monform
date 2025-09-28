@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resorts in Sikkim</title>
+  <style>
+    :root {
+      --bg-url: url("https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg");
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Hero banner with the same background image */
+    .hero {
+      width: 100%;
+      height: 300px;
+      background: var(--bg-url) no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .container {
+      padding: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* ✅ Uniform background image container */
+    .card .img {
+      width: 100%;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      padding: 0 10px;
+    }
+
+    .card p {
+      padding: 0 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin: 10px 0 15px;
+      padding: 6px 12px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #555;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .container { gap: 1em; padding: 1em; }
+      .card { width: 100%; }
+      .hero { height: 200px; font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO banner using the same background -->
+  <div class="hero">Accomodation near the Monastery</div>
+
+  <div class="container">
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th/id/OLC.iahXqRbn9s5ClA480x360?&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Hotel Mount Siniolchu, Gangtok</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://ak-d.tripcdn.com/images/0225c12000ab6hr57D425_R_600_400_R5_Q70_D.jpg');"></div>
+      <h2>The Elgin Mount Pandim - Heritage Resort & Spa</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://ak-d.tripcdn.com/images/0585r12000d3trq2s058E_R_960_660_R5_D.jpg');"></div>
+      <h2>Kaya Gantavya Resort & Spa Pelling</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th?id=OLC.2UftUM5xgz%2bYfw480x360&r=0&o=7&cb=ucfimgc2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Sterling Gangtok - Orange Village</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://c.otcdn.com/imglib/hotelfotos/8/044/hotel-the-elgin-norkhill-gangtok-20240416091201149500.jpg');"></div>
+      <h2>The Elgin Nor-Khill - A Heritage Hotel & Spa</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://static.logitravel.com/cloudcontent/fotos/agregadorHotelero/0021/66776/2166776/1.jpg?f=15308762');"></div>
+      <h2>Summit Norling Resort & Spa</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th?id=OLC.Ci+DZz3t2lrmOQ480x360&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Le Coxy Resort Lachung</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th?id=OLC.cZyt+utnzY2qQQ480x360&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Mount Bayul Shangri-La Resort</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://pix10.agoda.net/hotelImages/23118617/-1/31f1e7195de197625c6f772593b26cc8.jpg?ce=0&s=1024x768');"></div>
+      <h2>Summit Tashi Ghang Heritage Resort</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+
+    <div class="card">
+      <div class="img" style="background-image: url('https://thvnext.bing.com/th?id=OLC.DV9Z48P02GsJ+A480x360&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <h2>Yangthang Heritage Hotel</h2>
+      <p>Click here to Confirm this Resort</p>
+      <a href="./form.html">Click Here</a>
+    </div>
+  </div>
+
+</body>
+</html>

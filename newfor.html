@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fill the details</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("https://www.poojn.in/wp-content/uploads/2025/04/The-Namgyal-Dynastys-Legacy-Architecture-and-Art-in-Sikkim.jpeg.jpg") 
+                  no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(141, 108, 45, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-group {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkbox-group {
+      flex: 1 1 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .form-group {
+        flex: 1 1 100%;
+      }
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      font-size: 1.1rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Fill the details</h2>
+    <form id="detailsForm">
+      <div class="form-group">
+        <label for="input1">No Of People Travelling</label>
+        <input type="number" id="input1" placeholder="Enter the number of people" min="1">
+      </div>
+      <div class="form-group">
+        <label for="input2">No of Days of Accommodation</label>
+        <input type="number" id="input2" placeholder="Enter number of days" min="1">
+      </div>
+      <div class="form-group">
+        <label for="input3">Date of Visiting</label>
+        <input type="date" id="input3">
+      </div>
+      <div class="form-group">
+        <label for="input4">Date of Departure</label>
+        <input type="date" id="input4">
+      </div>
+
+      <!-- Terms and conditions checkbox -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree the terms and conditions</label>
+      </div>
+     
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("detailsForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent default submit
+
+      const inputs = document.querySelectorAll("#detailsForm input[type='number'], #detailsForm input[type='date']");
+      const terms = document.getElementById("terms");
+
+      for (let input of inputs) {
+        if (input.value.trim() === "") {
+          alert("Please fill all the inputs before submitting!");
+          return;
+        }
+      }
+
+      if (!terms.checked) {
+        alert("You must agree to the terms and conditions before submitting!");
+        return;
+      }
+
+      // Success message
+      alert("Thank You. We will get back to you soon");
+
+      // Redirect to link
+      window.location.href = "#";
+    });
+  </script>
+</body>
+</html>
